@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>my name is {{name}}</h1>
+    {% if age > 26 %}
+        <h1>my age is {{age}}</h1>
+    {% endif %}
+    {% for i in name %} 
+        <h1>{{i}}</h1>   
+    {% endfor %} 
+
+    <h1>hobbies are</h1>
+    {% for h in hobbies %}
+         <h1>{{h}}</h1>
+    {% endfor %}
+
+
+
+    <h1>url navigation</h1>
+        <h1><a href="{% url 'conditions' %}">click here to navigate conditions</a></h1>
+    </center>
+</body>
+</html>

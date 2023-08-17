@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <!--
+        <h1>
+          <h1> if condition</h1>
+          {% if a > b %}
+          <h1>{{a}}</h1>
+          {% else %}
+          <h1>{{b}}</h1> 
+          {% endif %} 
+        -->
+        <!--
+            <h1>elif condition</h1>
+            {% if a > b and a > c %}
+            <h1>if block</h1>
+            <h1>a is having high value{{a}}</h1>
+            {% elif block b > c %}
+            <h1>elif block</h1>
+            <h1>b is high value{{b}}</h1>
+            {% else %}
+            <h1>else block</h1>
+            <h1>c is high value</h1>
+            {% endif %}
+        -->
+        <!--
+            <h1>nested if condition</h1>
+            {% if a > b %}
+                {% if a > c %}
+                <h1>a is high value{{a}}</h1>
+                {% else %}
+                <h1>c is high value<{{c}}</h1>
+                {% endif %}
+            {% else %}
+                {% if condition %}
+                <h1>a is high value{{a}}</h1>
+                {% else %}
+                <h1>c is high value{{c}}</h1>
+                {% endif %}
+            {% endif %}
+        -->
+
+
+        <h1>if_elif</h1>
+        {% if a > b and a > c %}
+             <h1>if block</h1>
+             <h1>a is max{{a}}</h1>  
+        {% elif b > c %}
+             <h1>elif block</h1>
+             <h1>b is max{{b}}</h1>  
+        {% else %}
+             <h1>else block</h1>
+             <h1>c is max{{c}}</h1>
+        {% endif %}
+
+
+
+
+        <h1>url navigation</h1>
+           <h1><a href="{% url 'data_render' %}">click here to navigate data_render</a></h1>
+    </center>
+</body>
+</html>
